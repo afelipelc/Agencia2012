@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/fondo">
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbar" />
+
+    <EditText
+        android:id="@+id/buscadorautos"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Buscar autos."
+        android:textSize="12dp" >
+
+        <requestFocus />
+    </EditText>
+
+
+    <ListView
+        android:id="@+id/listaautos"
+        android:layout_width="fill_parent"
+        android:layout_height="200dp" android:layout_weight="12.23" android:listSelector="@drawable/fondoitem">
+
+    </ListView>
+
+
+    <include
+        android:id="@+id/include2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.85"
+        layout="@layout/pie" />
+
+</LinearLayout>

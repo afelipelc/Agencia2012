@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" android:background="@drawable/fondo">
+
+    <include
+        android:id="@+id/bareditinclude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbaredit" />
+
+    <include
+        android:id="@+id/navbarinclude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbar" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical" android:layout_weight="12.23">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+          
+            <LinearLayout
+                android:id="@+id/linearLayout2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" android:padding="6dp" android:paddingBottom="4dp">
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="6dp" >
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Número de serie:"
+                        android:textColor="@color/textoetiqueta" />
+
+
+                    <EditText
+                        android:id="@+id/NoSerieAutoTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:background="@drawable/fondotextbox"
+                        android:capitalize="words"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/textoetiquetaf"
+                        android:textSize="@dimen/SizeTextBox" >
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="6dp" >
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Marca:"
+                        android:textColor="@color/textoetiqueta" />
+
+
+
+                    <Spinner
+                        android:id="@+id/MarcaAutoCmb"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:clickable="false"
+                        android:paddingLeft="6dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="6dp" >
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Modelo:"
+                        android:textColor="@color/textoetiqueta" />
+
+
+                    <EditText
+                        android:id="@+id/ModeloAutoTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:background="@drawable/fondotextbox"
+                        android:capitalize="words"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/textoetiquetaf"
+                        android:textSize="@dimen/SizeTextBox" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout04"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="6dp" >
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Año:"
+                        android:textColor="@color/textoetiqueta" />
+
+
+                    <EditText
+                        android:id="@+id/AnioAutoTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:background="@drawable/fondotextbox"
+                        android:capitalize="words"
+                        android:enabled="false"
+                        android:inputType="number"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/textoetiquetaf"
+                        android:textSize="@dimen/SizeTextBox" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="6dp" >
+
+                    <TextView
+                        android:id="@+id/TextView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Color:"
+                        android:textColor="@color/textoetiqueta" />
+
+
+                    <EditText
+                        android:id="@+id/ColorAutoTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:background="@drawable/fondotextbox"
+                        android:capitalize="words"
+                        android:enabled="false"
+                        android:inputType="text"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/textoetiquetaf"
+                        android:textSize="@dimen/SizeTextBox" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout06"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="6dp" >
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Precio:"
+                        android:textColor="@color/textoetiqueta" />
+
+
+                    <EditText
+                        android:id="@+id/PrecioAutoTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:background="@drawable/fondotextbox"
+                        android:enabled="false"
+                        android:inputType="numberDecimal"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/textoetiquetaf"
+                        android:textSize="@dimen/SizeTextBox" />
+
+                </LinearLayout>
+                
+
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout07"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="6dp" >
+
+                <TextView
+                    android:id="@+id/TextView06"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Vendido:"
+                    android:textColor="@color/textoetiqueta" android:paddingRight="6dp"/>
+
+
+                <TextView
+                    android:id="@+id/VendidoAutoLbl"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/AltoTextBox"
+                    android:background="@drawable/fondotextbox"
+                    android:paddingLeft="6dp"
+                    android:textColor="@color/textoetiquetaf"
+                    android:textSize="@dimen/SizeTextBox" />
+
+            </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout08"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:paddingTop="6dp" >
+
+
+                    <Button
+                        android:id="@+id/VenderAutoBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:text="Vender auto"
+                        android:textSize="14sp" />
+
+
+                    <Button
+                        android:id="@+id/VerVentaBtn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="38dp"
+                        android:text="Ver detalles de venta"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.09"
+        layout="@layout/pie" />
+
+</LinearLayout>

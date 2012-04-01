@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/bareditinclude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbaredit" />
+    
+        <include
+        android:id="@+id/navbarinclude"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbar" />
+
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:orientation="vertical" android:layout_weight="12.23">
+
+        <ScrollView
+            android:id="@+id/scrollView1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:id="@+id/LinearLayout08"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="6dp"
+                android:paddingBottom="4dp" >
+
+                <LinearLayout
+                    android:id="@+id/linearLayout2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:paddingTop="6dp">
+
+                    <TextView
+                        android:id="@+id/textView2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nombre:"
+                        android:textColor="@color/textoetiqueta" />
+
+
+                    <EditText
+                        android:id="@+id/NombreClienteTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:inputType="textPersonName"
+                        android:textSize="@dimen/SizeTextBox" android:background="@drawable/fondotextbox" android:textColor="@color/textoetiquetaf" android:paddingLeft="6dp" android:enabled="false" android:capitalize="words">
+
+                        <requestFocus />
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout01"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingTop="6dp" >
+
+                    <TextView
+                        android:id="@+id/TextView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Apellidos:"
+                        android:textColor="@color/textoetiqueta" />
+
+
+
+                    <EditText
+                        android:id="@+id/ApellidosClienteTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:background="@drawable/fondotextbox"
+                        android:capitalize="words"
+                        android:enabled="false"
+                        android:inputType="textPersonName"
+                        android:paddingLeft="6dp"
+                        android:textColor="@color/textoetiquetaf"
+                        android:textSize="@dimen/SizeTextBox" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/TextView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Edad:"
+                        android:textColor="@color/textoetiqueta" />
+
+
+
+                    <EditText
+                        android:id="@+id/EdadClienteTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:background="@drawable/fondotextbox"
+                        android:inputType="number"
+                        android:textColor="@color/textoetiquetaf"
+                        android:textSize="@dimen/SizeTextBox" android:enabled="false" android:numeric="integer"/>                    
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout02"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical" android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/TextView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Calle y número:"
+                        android:textColor="@color/textoetiqueta" />
+
+                    <EditText
+                        android:id="@+id/CalleClienteTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/fondotextbox"
+                        android:inputType="textPostalAddress"
+                        android:textColor="@color/textoetiquetaf"
+                        android:textSize="@dimen/SizeTextBox" android:enabled="false"/>
+
+                    <LinearLayout
+                        android:id="@+id/linearLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical" android:padding="2dp">
+                    </LinearLayout>
+
+
+                    <EditText
+                        android:id="@+id/NumeroDomClienteTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:background="@drawable/fondotextbox"
+                        android:enabled="false"
+                        android:hint="Número."
+                        android:textColor="@color/textoetiquetaf"
+                        android:textSize="@dimen/SizeTextBox" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout05"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="4dp" >
+
+                    <TextView
+                        android:id="@+id/TextView09"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Estado"
+                        android:textColor="@color/textoetiqueta" />
+
+                    <Button android:id="@+id/EstadoClienteTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:background="@drawable/fondobotontextbox"
+                        android:editable="false"
+                        android:enabled="false"
+                        android:textColor="@color/textoetiquetaf"
+                        android:textSize="@dimen/SizeTextBox" android:gravity="left|center_vertical" android:hint="Seleccionar estado."/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout04"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="4dp" android:paddingTop="8dp">
+
+                    <TextView
+                        android:id="@+id/TextView07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Municipio:"
+                        android:textColor="@color/textoetiqueta" />
+
+                    <Button android:id="@+id/MpioClienteTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:background="@drawable/fondobotontextbox"
+                        android:textColor="@color/textoetiquetaf"
+                        android:textSize="@dimen/SizeTextBox" 
+                        android:enabled="false" android:editable="false" android:gravity="left|center_vertical" android:hint="Seleccionar municipio"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout03"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="4dp"
+                    android:paddingTop="8dp" >
+
+                    <TextView
+                        android:id="@+id/TextView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Localidad:"
+                        android:textColor="@color/textoetiqueta" />
+
+                    <Button android:id="@+id/LocalidadClienteTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:background="@drawable/fondobotontextbox"
+                        android:editable="false"
+                        android:enabled="false" android:gravity="left|center_vertical" android:hint="Seleccionar localidad" android:textColor="@color/textoetiquetaf" android:textSize="@dimen/SizeTextBox"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/linearLayout3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="4dp" >
+
+                    <TextView
+                        android:id="@+id/textView4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Teléfono:"
+                        android:textColor="@color/textoetiqueta" />
+
+                    <EditText
+                        android:id="@+id/TelefonoClienteTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:inputType="phone" 
+                        android:background="@drawable/fondotextbox"
+						android:textColor="@color/textoetiquetaf"
+                        android:textSize="@dimen/SizeTextBox" 
+                        android:phoneNumber="true" android:enabled="false"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/LinearLayout07"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:paddingBottom="4dp" >
+
+                    <TextView
+                        android:id="@+id/TextView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="e-Mail:"
+                        android:textColor="@color/textoetiqueta" />
+
+					<EditText
+                        android:id="@+id/EmailClienteTxt"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/AltoTextBox"
+                        android:background="@drawable/fondotextbox"
+                        android:textColor="@color/textoetiquetaf"
+                        android:textSize="@dimen/SizeTextBox" 
+                        android:enabled="false" 
+                        android:inputType="textEmailAddress"/>
+                </LinearLayout>
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+
+
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1.13"
+        layout="@layout/pie" />
+
+</LinearLayout>

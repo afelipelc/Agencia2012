@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo"
+    android:orientation="vertical" >
+
+    <include
+        android:id="@+id/include1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        layout="@layout/actionbar" />
+
+    <EditText
+        android:id="@+id/buscadorclientes"
+        android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:hint="Buscar clientes."
+        android:textSize="12dp" >
+
+        <requestFocus />
+    </EditText>
+
+    <ListView
+        android:id="@+id/listaclientes"
+        android:layout_width="match_parent"
+        android:layout_weight="12.23" android:layout_height="200dp" android:listSelector="@drawable/fondoitem">
+
+    </ListView>
+
+
+    <include
+        android:id="@+id/include2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.85"
+        layout="@layout/pie" />
+
+</LinearLayout>

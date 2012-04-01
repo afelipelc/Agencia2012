@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="intro">Esta es una aplicación básica desarrollada en Android.</string>
+    <string name="app_name">Agencia 2012</string>
+    <string name="etiqueta">Agencia 2012 - afelipelc</string>
+    <string name="clientestext">Clientes</string>
+	<string name="autostext">Autos</string>
+	<string name="ventastext">Ventas</string>
+	<string name="pietext">www.utim.edu.mx</string>
+	<string name="ClientesWS">clientes.asmx</string>
+	<string name="LugaresWS">lugares.asmx</string>
+    <string name="AutosWS">autos.asmx</string>
+    <string name="VentasWS">ventas.asmx</string>
+    <string name="LoginWS">login.asmx</string>
+	<string name="EspacioNombresWS">agencia2012.afelipelc.mx</string>
+	<string name="UrlWS">http://172.16.239.237:8080/webservices/</string>
+	<string name="autor">afelipelc.mx</string>
+</resources>

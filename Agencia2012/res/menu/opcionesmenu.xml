@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item android:id="@+id/EditarOpt" android:title="Editar"></item>
+    <item android:id="@+id/AgregarOpt" android:title="Agregar nuevo" android:icon="@android:drawable/ic_menu_add"></item>
+    
+    <item android:id="@+id/InicioOpt" android:title="Ir al Inicio"></item>
+    <item android:id="@+id/CancelarOpt" android:title="Cancelar" android:menuCategory="alternative"></item>
+    
+
+</menu>
