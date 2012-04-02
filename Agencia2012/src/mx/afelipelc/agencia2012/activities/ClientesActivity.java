@@ -40,9 +40,6 @@ public class ClientesActivity extends Activity {
 
     ElementoSimple[] listasimpleclientes;
 
-//Las actividades que cargan listas deben mejorarse, ya que al tener datos cargados y rotar el dispositivo, estos datos
-//ya no seran visibles, por lo tanto, se requiere la implementacion del evento onRestart() que redimensione la actividad
-//con nuevos cambios
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -52,7 +49,7 @@ public class ClientesActivity extends Activity {
 		listaclientes = (ListView) findViewById(R.id.listaclientes);
 		atrasbtn = (Button) findViewById(R.id.AtrasBtn);
 		autosbtn = (ImageButton) findViewById(R.id.autosnavbtn);
-		//Ocultar el boton Clientes de la barra de navegaciï¿½n
+		//Ocultar el boton Clientes de la barra de navegación
 		navclientes = (ImageButton) findViewById(R.id.clientesnavbtn);		
 		navclientes.setVisibility(View.GONE);
 		
@@ -89,7 +86,7 @@ public class ClientesActivity extends Activity {
 //		//Constantes de acceso al web service
 //		//Estructurar la ACCION que es: espacio_nombres_ws/Nombre_del_metodo_a_invocar
 //		String soap_accion = "agencia2012.afelipelc.mx/ListaClientes";
-//		//Nombre del Mï¿½todo a invocar en el WS
+//		//Nombre del Método a invocar en el WS
 //		String Metodo_Servicio = "ListaClientes";
 //		//Espacio de nombres del WS a invocar
 //		String Espacio_Nombres_WS = "agencia2012.afelipelc.mx";
@@ -100,10 +97,10 @@ public class ClientesActivity extends Activity {
 //		SoapSerializationEnvelope envelope;
 //		SoapPrimitive  resultsRequestSOAP=null;
 //		
-//		//Inicializar el objeto que invocarï¿½ al mï¿½todo del WS
+//		//Inicializar el objeto que invocará al método del WS
 //		request = new SoapObject(Espacio_Nombres_WS, Metodo_Servicio);
 //		envelope = new SoapSerializationEnvelope(SoapEnvelope.VER11);
-//		//Habilitar compatibilidad de codificaciï¿½n con los WS .NET
+//		//Habilitar compatibilidad de codificación con los WS .NET
 //		envelope.dotNet = true;
 //		
 //		envelope.setOutputSoapObject(request);
@@ -142,12 +139,12 @@ public class ClientesActivity extends Activity {
                 //AdaptadorCliente adaptador = new AdaptadorCliente(this, listasimpleclientes);
 	            listaclientes.setAdapter(new AdaptadorCliente(this, listasimpleclientes));
             }else
-                Toast.makeText(this, "La lista de clientes estï¿½ vacï¿½a, o no se pudo cargar la lista de clientes (verifique que la URL de los WS sea correcta).", Toast.LENGTH_SHORT).show();
+                Toast.makeText(this, "La lista de clientes está vacía, o no se pudo cargar la lista de clientes (verifique que la URL de los WS sea correcta).", Toast.LENGTH_SHORT).show();
 
 		}catch(Exception e)
 		{
             Log.d("Error en ClientesActivity", e.getMessage() + " >>>" + e.getStackTrace());
-			Toast.makeText(this, "Ocurriï¿½ un error al cargar la lista de clientes.", Toast.LENGTH_SHORT).show();
+			Toast.makeText(this, "Ocurrió un error al cargar la lista de clientes.", Toast.LENGTH_SHORT).show();
             finish();
 		}
 		
