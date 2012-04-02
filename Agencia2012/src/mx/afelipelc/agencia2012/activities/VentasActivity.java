@@ -60,20 +60,21 @@ public class VentasActivity extends Activity {
 
         accesodatosventas = new AccesoDatosVentas(this);
 
-//        try
-//        {
+        try
+        {
             ventas = accesodatosventas.ListaVentas();
             if(ventas!= null)
             {
                 listaventas.setAdapter(new AdaptadorVenta(this,ventas));
             }else
-                Toast.makeText(this, "La lista de ventas está vacía, o no se pudo cargar la lista de ventas (verifique que la URL de los WS sea correcta).", Toast.LENGTH_SHORT).show();
-//        }catch(Exception e)
-//        {
-//            Log.d("Error en VentasActivity", e.getMessage() + " >>>" + e.getStackTrace());
-//            Toast.makeText(this, "Ocurrió un error al cargar la lista de ventas.", Toast.LENGTH_SHORT).show();
-//            finish();
-//        }
+                Toast.makeText(this, "La lista de ventas esta vacia, o no se pudo cargar la lista de ventas (verifique que la URL de los WS sea correcta).", Toast.LENGTH_SHORT).show();
+        }catch(Exception e)
+        {
+            Log.d("Error en VentasActivity", e.getMessage() + " >>>" + e.getStackTrace());
+            Toast.makeText(this, "Ocurrio un error al cargar la lista de ventas.", Toast.LENGTH_SHORT).show();
+            finish();
+        }
+        
         //Acceder a los datos de ventas
         accesodatosventas = new AccesoDatosVentas(this);
 
@@ -123,7 +124,7 @@ public class VentasActivity extends Activity {
 	        }
 	     });
 	     
-	        //mostrar menú contextual
+	        //mostrar menï¿½ contextual
 	      //Boton opciones
 	        opcionesbtn.setOnClickListener(new View.OnClickListener() {			
 				public void onClick(View v) {				
@@ -132,6 +133,12 @@ public class VentasActivity extends Activity {
 			});
 	}
 	
+	@Override
+    	protected void onRestart()
+    	{
+	        super.onRestart();
+    	}
+    
 	//el menu contextual
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
