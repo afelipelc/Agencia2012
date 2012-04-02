@@ -42,7 +42,7 @@ public class ClientesActivity extends Activity {
 
 //Las actividades que cargan listas deben mejorarse, ya que al tener datos cargados y rotar el dispositivo, estos datos
 //ya no seran visibles, por lo tanto, se requiere la implementacion del evento onRestart() que redimensione la actividad
-
+//nuevo cambio para probar.
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
