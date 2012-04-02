@@ -169,6 +169,11 @@ public class AutosActivity extends Activity {
 	   		});
 	}
 
+	@Override
+    protected void onRestart()
+    {
+        super.onRestart();
+    }
 	//el menu contextual
 	@Override
 	public void onCreateContextMenu(ContextMenu menu, View v, ContextMenuInfo menuInfo) {
