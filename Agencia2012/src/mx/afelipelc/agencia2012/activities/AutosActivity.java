@@ -32,9 +32,6 @@ public class AutosActivity extends Activity {
 
     AccesoDatosAutos accesodatosautos;
 	Auto[] autoslistaobjs;
-
-	//Esta actividad tambien requiere modificacion onRestart() para redibujar la pantalla
-	//...
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
