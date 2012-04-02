@@ -41,6 +41,8 @@ public class ClientesActivity extends Activity {
     ElementoSimple[] listasimpleclientes;
   //Las actividades que cargan listas deben mejorarse, ya que al tener datos cargados y rotar el dispositivo, estos datos
   //ya no seran visibles, por lo tanto, se requiere la implementacion del evento onRestart() que redimensione la actividad
+    //que retome la lista cargada en el arreglo.
+    
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
