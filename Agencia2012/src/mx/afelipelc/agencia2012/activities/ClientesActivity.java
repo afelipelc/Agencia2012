@@ -39,7 +39,8 @@ public class ClientesActivity extends Activity {
    	//String[] listaelementos = {"Elemento 1", "Elemento 2", "Elemento 3","Elemento 4","Elemento 5"};
 
     ElementoSimple[] listasimpleclientes;
-
+  //Las actividades que cargan listas deben mejorarse, ya que al tener datos cargados y rotar el dispositivo, estos datos
+  //ya no seran visibles, por lo tanto, se requiere la implementacion del evento onRestart() que redimensione la actividad
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
