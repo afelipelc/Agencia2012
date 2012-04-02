@@ -4,11 +4,6 @@ import android.text.Editable;
 import android.text.TextWatcher;
 import android.widget.*;
 import mx.afelipelc.agencia2012.models.ElementoSimple;
-import org.ksoap2.SoapEnvelope;
-import org.ksoap2.serialization.SoapObject;
-import org.ksoap2.serialization.SoapPrimitive;
-import org.ksoap2.serialization.SoapSerializationEnvelope;
-import org.ksoap2.transport.HttpTransportSE;
 
 import android.util.Log;
 import mx.afelipelc.agencia2012.accesodatos.AccesoDatosClientes;
